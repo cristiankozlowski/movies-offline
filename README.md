@@ -1,41 +1,51 @@
-# Movies Offline (movies-offline)
 
-Sistema que consome a API themoviedb e funciona offline com PWA
+# 🎞 Movies Offline
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
+The Movies offline is a system that lists popular movies from themoviedb API and works offline in PWA mode
+
+
+
+## 📜 Apêndice
+
+It's necessary to subscribe and generate an API key in:
+
+[developer.themoviedb.org](https://developer.themoviedb.org/docs)
+
+and after you need to create a folder inside src, with the following path:
+
+```shell
+  $ tree
+  .
+  ├── src
+  │   └── config
+  |       └── key.js
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+and paste the key:
 
+```javascript
+//key.js
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
+const apiKey = "your_key_the_movie_db"
 
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
+export { apiKey }
 ```
 
 
 
-### Build the app for production
+
+
+## ⚙️ Deploy
+
+First of all, install by npm the dependencies, after you make the build of the project in PWA mode and at last you start the project to run a browser:
+
 ```bash
-quasar build
+  npm install
+  quasar build -m pwa
+  quasar dev -m pwa
 ```
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+## 📲 Demonstração
+
+https://github.com/cristiankozlowski/movies-offline/blob/main/movies_offline.gif
+
