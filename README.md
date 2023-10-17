@@ -5,7 +5,7 @@ The Movies offline is a system that lists popular movies from themoviedb API and
 
 
 
-## 📜 Apêndice
+## 📜 Summary
 
 It's necessary to subscribe and generate an API key in:
 
@@ -45,7 +45,9 @@ First of all, install by npm the dependencies, after you make the build of the p
   quasar dev -m pwa
 ```
 
-## 📲 Demonstração
+## 📲 Demo
 
-https://github.com/cristiankozlowski/movies-offline/blob/main/movies_offline.gif
+![movies-offline](https://github.com/cristiankozlowski/movies-offline/assets/26977328/9c3d7713-e11e-4d11-8bac-20394bc3de86)
+
+
 
