@@ -1,7 +1,7 @@
 import axios from "axios";
+import { apiKey } from "../../config/key.js";
 
 const theMovieDB = axios.create({ baseURL: process.env.THE_MOVIE_DB })
-const apiKey = "../../config/key";
 
 export async function getPopularMovies({ commit }) {
   await theMovieDB

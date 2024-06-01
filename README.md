@@ -1,9 +1,13 @@
 
 # 🎞 Movies Offline
 
+![quasar_version](https://img.shields.io/badge/quasar-2.6-green?style=for-the-badge)
+![vue_version](https://img.shields.io/badge/vuejs-3.0-green?style=for-the-badge)
+![vue_router_version](https://img.shields.io/badge/vue_router-4.0.0-green?style=for-the-badge)
+![vuex_version](https://img.shields.io/badge/vuex-4.0.1-green?style=for-the-badge)
+![axios](https://img.shields.io/badge/axios-1.2.1-green?style=for-the-badge)
+
 The Movies offline is a system that lists popular movies from themoviedb API and works offline in PWA mode
-
-
 
 ## 📜 Summary
 
@@ -30,10 +34,6 @@ const apiKey = "your_key_the_movie_db"
 
 export { apiKey }
 ```
-
-
-
-
 
 ## ⚙️ Deploy
 

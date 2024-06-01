@@ -2,7 +2,9 @@
   <div class="q-ma-lg container">
     <q-card class="my-card" v-for="(movie, index) in movies" :key="index">
       <q-img :src="`${imagesPath}/${movie.poster_path}`">
-        <q-btn flat class="vote-average">{{ movie.vote_average }}</q-btn>
+        <q-btn flat class="vote-average">{{
+          movie.vote_average.toFixed(1)
+        }}</q-btn>
         <div class="absolute-bottom title">
           <span>{{ movie.title }}</span>
         </div>
@@ -46,7 +48,7 @@ export default defineComponent({
             color: "red",
             position: "top-right",
             actions: [{ icon: "close", color: "white" }],
-            message: errorResponse.data.mensagem,
+            message: errorResponse.data.status_message,
           });
         })
         .finally(() => {
