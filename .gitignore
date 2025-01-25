@@ -18,7 +18,7 @@ node_modules
 /src-capacitor/node_modules
 
 # Keys TMDB
-/src/config
+# /src/config
 
 # Log files
 npm-debug.log*
